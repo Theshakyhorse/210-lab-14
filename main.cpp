@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-const int W10 = 10; //for formatting
+const int W = 13; //for formatting
 
 class Color {
 private:
@@ -20,14 +20,25 @@ public:
     void setBlue(int b) {blue = b;}
 //member print method
     void print() {
-        cout << setw(W10) << "Red Value: " << red << endl;
-        cout << setw(W10) << "Green value: " << green << endl;
-        cout << setw(W10) << "Blue value: " << blue << endl;
+        cout << setw(W) << "Red Value: " << red << endl;
+        cout << setw(W) << "Green value: " << green << endl;
+        cout << setw(W) << "Blue value: " << blue << endl << endl;
     }
 };
 
 int main() {
     //color 1
-    
+    Color first;
+    first.setRed(255);
+    first.setGreen(255);
+    first.setBlue(255);
+    first.print();
+
+    //color 2
+    Color second;
+    second.setRed(0);
+    second.setGreen(0);
+    second.setBlue(0);
+    second.print();
     return 0;
 }
