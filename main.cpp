@@ -40,5 +40,13 @@ int main() {
     second.setGreen(0);
     second.setBlue(0);
     second.print();
+
+    //color 3
+    Color third;
+    third.setRed(0);
+    third.setGreen(89);
+    third.setBlue(201);
+    third.print();
+    
     return 0;
 }
